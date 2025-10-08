@@ -12,10 +12,10 @@ body {
 }
 
 :root {
-    --title-color: #F39C12;
+    --title-color: white;
     --subtitle-color: #276A49;
     --header-color: #C0392B;
-    --btn-color: #F39C12;
+    --btn-color: #C0392B;
     --btn-hover-color: #276A49;
     --background-color: #F8F2E9;
     --text-color: #333;
