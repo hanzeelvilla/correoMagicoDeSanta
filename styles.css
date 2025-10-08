@@ -15,7 +15,8 @@ body {
     --title-color: #F39C12;
     --subtitle-color: #276A49;
     --header-color: #C0392B;
-    --secondary-color: #4a90e2;
+    --btn-color: #F39C12;
+    --btn-hover-color: #276A49;
     --background-color: #F8F2E9;
     --text-color: #333;
     --font-family: 'Lato', sans-serif;
@@ -129,7 +130,7 @@ textarea {
 }
 
 button {
-    background-color: var(--secondary-color);
+    background-color: var(--btn-color);
     color: white;
     padding: 1rem;
     border: none;
@@ -142,7 +143,7 @@ button {
 }
 
 button:hover {
-    background-color: #357abd;
+    background-color: var(--btn-hover-color);
 }
 
 table {
@@ -195,6 +196,19 @@ a:hover {
     padding: 0 1rem;
 }
 
+.icon {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 0.75rem;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
 /* RESPONSIVE DESIGN - MOBILE FIRST */
 @media (max-width: 768px) {
     h1 {
@@ -238,6 +252,12 @@ a:hover {
     .container {
         padding: 0 0.25rem;
     }
+
+    .icon {
+        width: 28px;
+        height: 28px;
+        margin-right: 0.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -276,5 +296,11 @@ a:hover {
 
     footer {
         font-size: 0.9rem;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 0.4rem;
     }
 }
